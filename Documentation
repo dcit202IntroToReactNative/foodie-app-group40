@@ -1,0 +1,117 @@
+# Food Delivery App Documentation
+
+## Table of Contents
+1. Introduction
+2. Getting Started
+   - Prerequisites
+   - Installation
+   - Running the App
+3. App Features
+   - User Registration and Authentication
+   - Browse Restaurants and Menu
+   - Place an Order
+   - Cart Functionality
+   - Payment Options
+   - Order Tracking
+   - Order History
+4. Project Structure
+   - Folder Structure
+   - Key Files
+5. Technologies Used
+6. Future Enhancements
+7. Conclusion
+
+## 1. Introduction
+The Food Delivery App is a React Native mobile application that allows users to order food from various restaurants and get it delivered to their doorstep. It provides an easy-to-use interface with multiple features like user authentication, restaurant browsing, menu selection, order tracking, and more. The app is built using React Native, making it cross-platform and compatible with both iOS and Android devices.
+
+## 2. Getting Started
+
+### Prerequisites
+Before running the app, ensure you have the following prerequisites installed:
+- Node.js and npm (Node Package Manager)
+- React Native CLI
+- Android Studio (for Android development) or Xcode (for iOS development)
+- An Android emulator or iOS simulator set up
+
+### Installation
+1. Clone the repository from [GitHub URL]
+2. Navigate to the project directory using the terminal.
+3. Run `npm install` to install all the dependencies.
+
+### Running the App
+- For Android:
+  ```
+  npx react-native run-android
+  ```
+
+- For iOS:
+  ```
+  npx react-native run-ios
+  ```
+
+## 3. App Features
+
+### User Registration and Authentication
+- New users can register using their email or social media accounts.
+- Existing users can log in with their credentials.
+- User authentication ensures secure access to the app's features.
+
+### Browse Restaurants and Menu
+- Users can view a list of nearby restaurants.
+- Each restaurant displays its menu, along with item details and prices.
+- Filtering options enable users to find specific cuisines or dishes easily.
+
+### Place an Order
+- Users can add items to their cart and customize them if required.
+- They can select delivery or pickup options and specify the address.
+
+### Cart Functionality
+- The cart stores the selected items, quantity, and total amount.
+- Users can review and modify their order in the cart before proceeding to payment.
+
+### Payment Options
+- Users can choose from various payment methods, such as credit cards, mobile wallets, or cash on delivery.
+
+### Order Tracking
+- Users can track the status of their order in real-time.
+- They receive notifications for order confirmation, preparation, and delivery.
+
+### Order History
+- Users can view their past order history with details of each order.
+
+## 4. Project Structure
+
+### Folder Structure
+- **src**: Contains the main source code of the app.
+  - **components**: Reusable components used throughout the app.
+  - **screens**: Individual screens or pages of the app.
+  - **navigation**: Navigation-related files, including routing and navigation logic.
+  - **redux**: Redux store setup and related actions and reducers.
+  - **services**: API services to interact with the backend.
+  - **assets**: Static assets like images and fonts.
+  - **utils**: Utility functions and helper modules.
+  
+### Key Files
+- **App.js**: The entry point of the app that sets up the main navigation.
+- **Navigation.js**: Contains the navigation logic and routes.
+- **store.js**: Configures the Redux store.
+- **api.js**: Defines endpoints and API-related configurations.
+- **cart.js**: Manages the cart functionality and interactions.
+
+## 5. Technologies Used
+- React Native: Building the cross-platform mobile app.
+- Redux: State management for a predictable and scalable app.
+- React Navigation: Handling navigation between screens.
+- Axios: Making API requests to the backend server.
+- AsyncStorage: Storing user data and authentication tokens locally.
+
+## 6. Future Enhancements
+Some potential areas for future app enhancements include:
+- Implementing a user rating and review system for restaurants and dishes.
+- Adding a real-time chat support feature for customer assistance.
+- Integrating with popular food delivery services for expanded restaurant choices.
+- Implementing in-app notifications for various events like order status updates and promotions.
+- Enhancing the user interface with animations and better visual feedback.
+
+## 7. Conclusion
+The Food Delivery App is a powerful and user-friendly solution for ordering food from nearby restaurants. With its comprehensive features and straightforward interface, users can quickly browse through menus, place orders, and track their deliveries with ease. The app's React Native foundation ensures it runs smoothly on both iOS and Android devices. By following this documentation, you can set up and use the app effortlessly. Happy food ordering!
