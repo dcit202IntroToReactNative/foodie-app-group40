@@ -1,10 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaView, StyleSheet, Text, View } from 'react-native';
-import AppNavigation from './navigation/appNavigation';
+import { NavigationContainer } from "@react-navigation/native";
+import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import Home from './src/component/Home';
+import Details from '../src/components/Details';
+
+const App = () => {
+
+  const Stack = createNativeStackNavigator();
 
 
-export default function App() {
   return (
-    <AppNavigation />
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="home" component={Home} />
+        <Stack.Screen name="details" component={Details} />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
-}
+};
+
+export default App;
